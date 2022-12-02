@@ -1,0 +1,156 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css");
+@import "partials/variables";
+
+footer {
+    background-color: black;
+    div{
+        span{ color:$color_fuente;}
+        div{
+            ul{
+                display: flex;
+                justify-content: space-evenly;
+                text-decoration: none;
+                align-items: center;
+                li{
+                    font-size: 30px;
+                    color: $color_icon;
+                }
+                li{
+                    font-size: 30px;
+                    color: $color_icon;
+                }
+                li{
+                    font-size: 30px;
+                    color: $color_icon;
+                }
+            }
+        }
+        p{color:$color_fuente}
+    }
+}
+
+.bi-whatsapp:hover{
+     color: rgb(20, 182, 20);
+}
+
+.bi-facebook:hover{
+   color: rgb(51, 51, 230);
+}
+
+.bi-instagram:hover{
+   color: palevioletred;
+}
+
+span {
+    font-family: $fuente_principal;
+}
+
+p {
+    font-family: $fuente_principal;
+}
+
+li {
+    font-family: $fuente_principal;
+}
+
+h1 {
+    font-family: $fuente_principal;
+}
+
+h2 {
+    font-family: $fuente_principal;
+}
+
+h3{
+    font-family: $fuente_principal;
+}
+
+#imagen{
+    background-image: url(../multimedia/auto.jpg);
+    color: $color_fuente;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.slogan {
+    color: $color_fuente;
+    text-align: center;
+    background-color: black;
+}
+
+#serviciosUno{
+    transition: all 2s;
+}
+
+#serviciosUno:hover{
+    transform: scale(1.1,1.1);
+}
+
+#serviciosDos{
+    transition: all 2s;
+}
+
+#serviciosDos:hover{
+    transform: scale(1.1,1.1);
+}
+
+#serviciosTres{
+    transition: all 2s;
+}
+
+#serviciosTres:hover{
+    transform: scale(1.1,1.1);
+}
+
+#mapa{
+    transition: 4s;
+}
+
+#mapa:hover{
+    transform: scale(1.3,1.3);
+}
+
+@media screen and (max-width: 576px){
+    #imagen{
+     height: 270px;
+     background-position: center top;
+    }
+    #mapa{
+     width: 100%;
+ }
+ 
+ }
+ 
+ @media only screen and (min-width: 576px){
+     #imagen{
+      height: 580px;
+      background-position: center top;
+     }
+ 
+     #mapa{
+         width: max-content;
+         height: 300px;
+     }
+ 
+     #hs{
+         width: fit-content;
+         height: 150px;
+     }
+ 
+     #acuerdo{
+         width: fit-content;
+         height: 400px;
+     }
+ 
+     #volante{
+         width: fit-content;
+         height: 400px;
+     }
+  }
+  
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
