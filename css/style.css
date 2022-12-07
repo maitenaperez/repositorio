@@ -1,33 +1,30 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css");
+.icon, footer div div .iconos .icon--wtp, footer div div .iconos .icon--fb, footer div div .iconos .icon--ig {
+  font-size: 30px;
+  color: #999898;
+  text-decoration: none; }
+
 footer {
   background-color: black; }
   footer div span {
     color: white; }
-  footer div div ul {
+  footer div div .iconos {
     display: flex;
+    align-items: center;
     justify-content: space-evenly;
     text-decoration: none;
-    align-items: center; }
-    footer div div ul li {
-      font-size: 30px;
-      color: #999898; }
-    footer div div ul li {
-      font-size: 30px;
-      color: #999898; }
-    footer div div ul li {
-      font-size: 30px;
-      color: #999898; }
+    list-style: none; }
   footer div p {
     color: white; }
 
 .bi-whatsapp:hover {
-  color: #14b614; }
+  color: #0ab80a; }
 
 .bi-facebook:hover {
-  color: #3333e6; }
+  color: #08088d; }
 
 .bi-instagram:hover {
-  color: palevioletred; }
+  color: #da215e; }
 
 span {
   font-family: "Times New Roman", Times, serif; }
@@ -87,7 +84,16 @@ h3 {
     height: 270px;
     background-position: center top; }
   #mapa {
-    width: 100%; } }
+    width: 100%; }
+  #hs {
+    width: fit-content;
+    height: 100px; }
+  #acuerdo {
+    width: fit-content;
+    height: 270px; }
+  #volante {
+    width: fit-content;
+    height: 100x; } }
 
 @media only screen and (min-width: 576px) {
   #imagen {
@@ -108,6 +114,6 @@ h3 {
 
 main {
   display: flex;
-  flex-direction: column;
+  align-items: center;
   justify-content: center;
-  align-items: center; }
+  flex-direction: column; }

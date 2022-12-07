@@ -1,27 +1,35 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css");
 @import "partials/variables";
 
+@mixin estilo_general($justify){
+    display: flex;
+    align-items: center;
+    justify-content: $justify;
+}
+
+.icon{
+    font-size: 30px;
+    color: $color_icon;
+    text-decoration: none;
+}
+
 footer {
     background-color: black;
     div{
         span{ color:$color_fuente;}
         div{
-            ul{
-                display: flex;
-                justify-content: space-evenly;
+            .iconos{
+                @include estilo_general(space-evenly);
                 text-decoration: none;
-                align-items: center;
-                li{
-                    font-size: 30px;
-                    color: $color_icon;
+                list-style: none;
+                .icon--wtp{
+                   @extend .icon;
                 }
-                li{
-                    font-size: 30px;
-                    color: $color_icon;
+                .icon--fb{
+                    @extend .icon;
                 }
-                li{
-                    font-size: 30px;
-                    color: $color_icon;
+                .icon--ig{
+                    @extend .icon;
                 }
             }
         }
@@ -30,15 +38,15 @@ footer {
 }
 
 .bi-whatsapp:hover{
-     color: rgb(20, 182, 20);
+     color: rgb(10, 184, 10);
 }
 
 .bi-facebook:hover{
-   color: rgb(51, 51, 230);
+   color: rgb(8, 8, 141);
 }
 
 .bi-instagram:hover{
-   color: palevioletred;
+   color: rgb(218, 33, 94);
 }
 
 span {
@@ -117,7 +125,21 @@ h3{
     }
     #mapa{
      width: 100%;
- }
+    }
+    #hs{
+        width: $imagenes;
+        height: 100px;
+    }
+
+    #acuerdo{
+        width: $imagenes;
+        height: 270px;
+    }
+
+    #volante{
+        width: $imagenes;
+        height: 100x;
+    }
  
  }
  
@@ -127,30 +149,28 @@ h3{
       background-position: center top;
      }
  
-     #mapa{
+    #mapa{
          width: max-content;
          height: 300px;
      }
  
      #hs{
-         width: fit-content;
+         width: $imagenes;
          height: 150px;
      }
  
      #acuerdo{
-         width: fit-content;
+         width: $imagenes;
          height: 400px;
      }
  
      #volante{
-         width: fit-content;
+         width: $imagenes;
          height: 400px;
      }
   }
   
   main {
-    display: flex;
+    @include estilo_general(center);
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
