@@ -50,6 +50,40 @@ h3 {
   background-repeat: no-repeat;
   background-size: contain; }
 
+.cliente {
+  background-color: #b37346; }
+  .cliente div {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  .cliente #hotel {
+    background-image: url(../multimedia/hotel.png);
+    background-repeat: no-repeat;
+    background-size: contain; }
+    .cliente #hotel a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white; }
+  .cliente #agencia {
+    background-image: url(../multimedia/edificios.jpg);
+    background-repeat: no-repeat;
+    background-size: contain; }
+    .cliente #agencia a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white; }
+  .cliente #particular {
+    background-image: url(../multimedia/auto_blanco.jpg);
+    background-repeat: no-repeat;
+    background-size: contain; }
+    .cliente #particular a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white; }
+
 .slogan {
   color: white;
   text-align: center;
@@ -80,14 +114,30 @@ h3 {
   transform: scale(1.3, 1.3); }
 
 @media screen and (max-width: 576px) {
+  div {
+    margin: 10px; }
   #imagen {
     height: 270px;
     background-position: center top; }
+  #hotel {
+    height: 270px;
+    background-image: center top;
+    margin: 5px; }
+  #agencia {
+    height: 270px;
+    background-image: center center;
+    margin: 5px; }
+  #particular {
+    height: 270px;
+    background-image: center center;
+    margin: 5px; }
+  .recepcionista {
+    width: fit-content; }
   #mapa {
     width: 100%; }
   #hs {
-    width: fit-content;
-    height: 100px; }
+    width: 100%;
+    height: 100; }
   #acuerdo {
     width: fit-content;
     height: 270px; }
@@ -99,6 +149,18 @@ h3 {
   #imagen {
     height: 580px;
     background-position: center top; }
+  #hotel {
+    height: 580px;
+    background-position: center top;
+    margin: 10px; }
+  #agencia {
+    height: 580px;
+    background-position: center top;
+    margin: 10px; }
+  #particular {
+    height: 580px;
+    background-position: center top;
+    margin: 10px; }
   #mapa {
     width: max-content;
     height: 300px; }

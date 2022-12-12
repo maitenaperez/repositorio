@@ -7,6 +7,7 @@
     justify-content: $justify;
 }
 
+
 .icon{
     font-size: 30px;
     color: $color_icon;
@@ -80,6 +81,42 @@ h3{
     background-size: contain;
 }
 
+.cliente{
+    background-color: rgb(179, 115, 70);
+    div{
+        @include estilo_general(center);
+    }
+    #hotel{
+        background-image: url(../multimedia/hotel.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        a{
+            @include estilo_general(center);
+            color: $color_fuente;
+        }
+    }
+    
+    #agencia{
+        background-image: url(../multimedia/edificios.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        a{
+            @include estilo_general(center);
+            color: $color_fuente;
+        }
+    }
+    
+    #particular{
+        background-image: url(../multimedia/auto_blanco.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        a{
+            @include estilo_general(center);
+            color: $color_fuente;
+        }
+    }
+}
+
 .slogan {
     color: $color_fuente;
     text-align: center;
@@ -119,16 +156,43 @@ h3{
 }
 
 @media screen and (max-width: 576px){
+    div{
+        margin: 10px;
+    }
+
     #imagen{
      height: 270px;
      background-position: center top;
     }
+
+    #hotel{
+        height: 270px;
+        background-image: center top;
+        margin: 5px;
+    }
+
+    #agencia{
+        height: 270px;
+        background-image: center center;
+        margin: 5px;
+    }
+
+    #particular{
+        height: 270px;
+        background-image: center center;
+        margin: 5px;
+    }
+
+    .recepcionista{
+        width: $imagenes;
+    }
     #mapa{
      width: 100%;
     }
+
     #hs{
-        width: $imagenes;
-        height: 100px;
+        width: 100%;
+        height: 100;
     }
 
     #acuerdo{
@@ -147,6 +211,24 @@ h3{
      #imagen{
       height: 580px;
       background-position: center top;
+     }
+
+     #hotel{
+      height: 580px;
+      background-position: center top;
+      margin: 10px;
+     }
+
+     #agencia{
+      height: 580px;
+      background-position: center top;
+      margin: 10px;
+     }
+
+     #particular{
+      height: 580px;
+      background-position: center top;
+      margin: 10px;
      }
  
     #mapa{
