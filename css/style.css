@@ -1,21 +1,28 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css");
 .icon, footer div div .iconos .icon--wtp, footer div div .iconos .icon--fb, footer div div .iconos .icon--ig {
-  font-size: 30px;
+  font-size: 20px;
   color: #999898;
   text-decoration: none; }
 
 footer {
   background-color: black; }
-  footer div span {
-    color: white; }
-  footer div div .iconos {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    text-decoration: none;
-    list-style: none; }
-  footer div p {
-    color: white; }
+  footer div {
+    margin: 0;
+    padding: 0; }
+    footer div span {
+      color: white; }
+    footer div div .iconos {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      list-style: none; }
+    footer div #copy {
+      background-color: #252525; }
+      footer div #copy p {
+        font-size: 10; }
+    footer div p {
+      color: white; }
 
 .bi-whatsapp:hover {
   color: #0ab80a; }
@@ -51,40 +58,21 @@ h3 {
   background-size: contain; }
 
 .cliente {
-  background-color: #b37346; }
-  .cliente div {
-    display: flex;
-    align-items: center;
-    justify-content: center; }
-  .cliente #hotel {
-    background-image: url(../multimedia/hotel.png);
-    background-repeat: no-repeat;
-    background-size: contain; }
-    .cliente #hotel a {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: white; }
-  .cliente #agencia {
-    background-image: url(../multimedia/edificios.jpg);
-    background-repeat: no-repeat;
-    background-size: contain; }
-    .cliente #agencia a {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: white; }
-  .cliente #particular {
-    background-image: url(../multimedia/auto_blanco.jpg);
-    background-repeat: no-repeat;
-    background-size: contain; }
-    .cliente #particular a {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: white; }
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .cliente #hotel a h2 {
+    text-decoration: none;
+    color: black; }
+  .cliente #agencia a h2 {
+    text-decoration: none;
+    color: black; }
+  .cliente #particular a h2 {
+    text-decoration: none;
+    color: black; }
 
 .slogan {
+  margin: 0;
   color: white;
   text-align: center;
   background-color: black; }
@@ -113,66 +101,35 @@ h3 {
 #mapa:hover {
   transform: scale(1.3, 1.3); }
 
+h4 {
+  font-family: "Times New Roman", Times, serif; }
+
 @media screen and (max-width: 576px) {
   div {
     margin: 10px; }
   #imagen {
     height: 270px;
-    background-position: center top; }
-  #hotel {
-    height: 270px;
-    background-image: center top;
-    margin: 5px; }
-  #agencia {
-    height: 270px;
-    background-image: center center;
-    margin: 5px; }
-  #particular {
-    height: 270px;
-    background-image: center center;
-    margin: 5px; }
-  .recepcionista {
-    width: fit-content; }
+    background-position: center top;
+    margin: 0; }
   #mapa {
-    width: 100%; }
-  #hs {
-    width: 100%;
-    height: 100; }
-  #acuerdo {
-    width: fit-content;
-    height: 270px; }
-  #volante {
-    width: fit-content;
-    height: 100x; } }
+    width: 100%; } }
 
 @media only screen and (min-width: 576px) {
+  span {
+    font-size: 18px; }
+  .slogan {
+    font-size: 20px; }
+  li {
+    font-size: 20px; }
   #imagen {
+    font-size: 20px;
     height: 580px;
     background-position: center top; }
-  #hotel {
-    height: 580px;
-    background-position: center top;
-    margin: 10px; }
-  #agencia {
-    height: 580px;
-    background-position: center top;
-    margin: 10px; }
-  #particular {
-    height: 580px;
-    background-position: center top;
-    margin: 10px; }
+  #texto {
+    font-size: 20px; }
   #mapa {
     width: max-content;
-    height: 300px; }
-  #hs {
-    width: fit-content;
-    height: 150px; }
-  #acuerdo {
-    width: fit-content;
-    height: 400px; }
-  #volante {
-    width: fit-content;
-    height: 400px; } }
+    height: 300px; } }
 
 main {
   display: flex;

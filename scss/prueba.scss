@@ -1,15 +1,14 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css");
 @import "partials/variables";
 
-@mixin estilo_general($justify){
+@mixin estilo_general($align, $justify){
     display: flex;
-    align-items: center;
+    align-items: $align;
     justify-content: $justify;
 }
 
-
 .icon{
-    font-size: 30px;
+    font-size: 20px;
     color: $color_icon;
     text-decoration: none;
 }
@@ -17,10 +16,12 @@
 footer {
     background-color: black;
     div{
+        margin: 0;
+        padding: 0;
         span{ color:$color_fuente;}
         div{
             .iconos{
-                @include estilo_general(space-evenly);
+                @include estilo_general(center, center);
                 text-decoration: none;
                 list-style: none;
                 .icon--wtp{
@@ -32,6 +33,12 @@ footer {
                 .icon--ig{
                     @extend .icon;
                 }
+            }
+        }
+        #copy{
+            background-color: rgb(37, 37, 37);
+            p{
+                font-size: 10;
             }
         }
         p{color:$color_fuente}
@@ -82,42 +89,35 @@ h3{
 }
 
 .cliente{
-    background-color: rgb(179, 115, 70);
-    div{
-        @include estilo_general(center);
-    }
+    @include estilo_general(center, center);
     #hotel{
-        background-image: url(../multimedia/hotel.png);
-        background-repeat: no-repeat;
-        background-size: contain;
         a{
-            @include estilo_general(center);
-            color: $color_fuente;
+            h2{
+            text-decoration: none;
+            color: black;
+            }
         }
     }
-    
     #agencia{
-        background-image: url(../multimedia/edificios.jpg);
-        background-repeat: no-repeat;
-        background-size: contain;
         a{
-            @include estilo_general(center);
-            color: $color_fuente;
+            h2{
+            text-decoration: none;
+            color: black;
+            }
         }
     }
-    
     #particular{
-        background-image: url(../multimedia/auto_blanco.jpg);
-        background-repeat: no-repeat;
-        background-size: contain;
         a{
-            @include estilo_general(center);
-            color: $color_fuente;
+            h2{
+            text-decoration: none;
+            color: black;
+            }
         }
     }
 }
 
 .slogan {
+    margin: 0;
     color: $color_fuente;
     text-align: center;
     background-color: black;
@@ -155,6 +155,10 @@ h3{
     transform: scale(1.3,1.3);
 }
 
+h4{
+    font-family: $fuente_principal;
+}
+
 @media screen and (max-width: 576px){
     div{
         margin: 10px;
@@ -163,96 +167,43 @@ h3{
     #imagen{
      height: 270px;
      background-position: center top;
+     margin: 0;
     }
 
-    #hotel{
-        height: 270px;
-        background-image: center top;
-        margin: 5px;
-    }
-
-    #agencia{
-        height: 270px;
-        background-image: center center;
-        margin: 5px;
-    }
-
-    #particular{
-        height: 270px;
-        background-image: center center;
-        margin: 5px;
-    }
-
-    .recepcionista{
-        width: $imagenes;
-    }
     #mapa{
      width: 100%;
     }
 
-    #hs{
-        width: 100%;
-        height: 100;
-    }
-
-    #acuerdo{
-        width: $imagenes;
-        height: 270px;
-    }
-
-    #volante{
-        width: $imagenes;
-        height: 100x;
-    }
- 
  }
  
  @media only screen and (min-width: 576px){
+    span {
+        font-size: 18px;
+    }
+    .slogan{
+        font-size: 20px;
+    }
+    li{
+        font-size: 20px;
+    }
      #imagen{
+      font-size: 20px;
       height: 580px;
       background-position: center top;
      }
 
-     #hotel{
-      height: 580px;
-      background-position: center top;
-      margin: 10px;
-     }
-
-     #agencia{
-      height: 580px;
-      background-position: center top;
-      margin: 10px;
-     }
-
-     #particular{
-      height: 580px;
-      background-position: center top;
-      margin: 10px;
+     #texto{
+        font-size: 20px;
      }
  
     #mapa{
          width: max-content;
          height: 300px;
      }
- 
-     #hs{
-         width: $imagenes;
-         height: 150px;
-     }
- 
-     #acuerdo{
-         width: $imagenes;
-         height: 400px;
-     }
- 
-     #volante{
-         width: $imagenes;
-         height: 400px;
-     }
-  }
+     
+ }
   
   main {
-    @include estilo_general(center);
+    @include estilo_general(center, center);
     flex-direction: column;
 }

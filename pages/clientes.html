@@ -11,13 +11,13 @@
 <body>
     <header >
       <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
-        <div class="container-fluid">
+        <div class="container">
           <a class="navbar-brand" href="">REMISSES PILAR</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
+            <ul class="navbar-nav ms-auto">
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
               </li>
@@ -39,32 +39,37 @@
       </nav>
     </header>
     <main class="cliente">
-      <div class="container"><H1>Trabajamos con</H1></div>
-      <div class="container" id="hotel">
-        <a href=""> <h2>HOTELES</h2></a>
-      </div>
-       <div class="container"  id="agencia">
-        <a href=""><h2>AGENCIAS</h2></a>
-       </div>
-       <div class="container" id="particular">
-        <a href=""><h2>PARTICULARES</h2></a>
-       </div>
+      <div class="container text-center mt-4"><H1>Nuestros Clientes</H1></div>
+        <div class="row container col .col-7 container text-center mt-4" id="hotel">
+          <a href=""> <h2>HOTELES</h2></a>
+          <img class="img-fluid" src="../multimedia/hotel.png" alt="">
+        </div>
+         <div class="row container col .col-7 container text-center mt-5"  id="agencia">
+          <a href=""><h2>AGENCIAS</h2></a>
+          <img class="img-fluid" src="../multimedia/edificios.jpg" alt="">
+         </div>
+         <div class="row container col .col-7 container text-center mt-5 mb-5" id="particular">
+          <a href=""><h2>PARTICULARES</h2></a>
+          <img class="img-fluid" src="../multimedia/auto_blanco.jpg" alt="">
+         </div>
     </main>
     <footer>
-      <div class="container-fluid">
-            <p>Remises Pilar</p>
-            <p>Encontranos en nuestras redes!</p>
-            <div>
-                <ul class="iconos">
-                  <li><a class="icon icon--wtp" href=""><i class="bi bi-whatsapp"></i></a></li>
-                    <li><a class="icon icon--fb" href="https://www.facebook.com/remisesparaempresas/"><i class="bi bi-facebook"></i></a></li>
-                    <li><a class="icon icon--ig" href="https://www.instagram.com/remisesparaempresas/"><i class="bi bi-instagram"></i></a></li>
-                </ul> 
-            </div>
-            <p>Proyect by Perez Maitena</p>
-        </div>
+      <div>
+          <h4 class="text-center text-light">Remisses Pilar</h4>
+          <p class="row col-md-8 offset-md-2 text-light text-center">Para mas información sobre nosotros visita nuestras redes, o contactate con nosotros vía WhatsApp para que podamos resonder tus dudas de forma personal.</p>
+          <div>
+              <ul class="iconos container text-center">
+                  <li><a class="icon icon--wtp me-4" href="https://api.whatsapp.com/send/?phone=5491122855007&text&type=phone_number&app_absent=0"><i class="bi bi-whatsapp"></i></a></li>
+                  <li><a class="icon icon--fb ms-4 me-4" href="https://www.facebook.com/remisesparaempresas/"><i class="bi bi-facebook"></i></a></li>
+                  <li><a class="icon icon--ig ms-4" href="https://www.instagram.com/remisesparaempresas/"><i class="bi bi-instagram"></i></a></li>
+              </ul> 
+          </div>
+      </div>
+      <div id="copy">
+          <p class="ms-6">Copyright© 2023 RemissesPilar</p>
+      </div>
 
-    </footer>
+  </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 </body>
 </html>
